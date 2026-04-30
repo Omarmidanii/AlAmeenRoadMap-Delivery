@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tWVxLNMok0o=",
+  "success": true,
+  "projectFilePath": "O:\\Projects\\Alameen\\FundamentalsLab.Api\\FundamentalsLab.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.6\\microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

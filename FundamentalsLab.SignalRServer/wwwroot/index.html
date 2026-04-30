@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Week 2 Dashboard</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #log { background: #1e1e1e; color: #0f0; padding: 15px; height: 300px; overflow-y: auto; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h2>System Architecture Lab</h2>
+    <button onclick="triggerJob()">Generate Background Job</button>
+    <div id="log"><div>Waiting for jobs...</div></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script>
+        const logBox = document.getElementById('log');
+        const appendLog = (msg, color = '#0f0') => logBox.innerHTML += `<div style="color:${color}">${msg}</div>`;
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/heartbeathub").withAutomaticReconnect().build();
+
+        connection.on("JobUpdate", msg => appendLog(msg, '#00d7ff'));
+        connection.on("ReceiveHeartbeat", (client, time) => appendLog(`Heartbeat from ${client}`, '#aaa'));
+
+        connection.start().then(() => appendLog("SignalR Connected.", "#28a745"));
+
+        async function triggerJob() {
+            await fetch('/api/jobs', { method: 'POST' });
+        }
+    </script>
+</body>
+</html>
