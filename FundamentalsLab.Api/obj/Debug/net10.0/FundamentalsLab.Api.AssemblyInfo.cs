@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FundamentalsLab.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0988916f7cce145a113790067c88ec8bee165c35")]
 [assembly: System.Reflection.AssemblyProductAttribute("FundamentalsLab.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FundamentalsLab.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
