@@ -1,10 +1,12 @@
-using GrpcServer.Services;
-
+using Microsoft.EntityFrameworkCore; // Unlocks the UseSqlServer method
+using GrpcServer.Data;               // Tells the file where to find AppDbContext
+using GrpcServer.Services;           // (You likely already have this one)
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddGrpc();
-
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

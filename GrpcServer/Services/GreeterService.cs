@@ -1,4 +1,5 @@
 using Grpc.Core;
+using GrpcServer.Data;     // Required to see AppDbContext and ChatMessageRecord
 using GrpcServer.Services;
 
 namespace GrpcServer.Services;
@@ -6,9 +7,13 @@ namespace GrpcServer.Services;
 public class GreeterService : Greeter.GreeterBase
 {
     private readonly ILogger<GreeterService> _logger;
-    public GreeterService(ILogger<GreeterService> logger)
+    private readonly AppDbContext _db; // 1. Add the database context field
+
+    // 2. Inject the database context via the constructor
+    public GreeterService(ILogger<GreeterService> logger, AppDbContext db) 
     {
         _logger = logger;
+        _db = db;
     }
 
     public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
@@ -17,27 +22,33 @@ public class GreeterService : Greeter.GreeterBase
     }
 
     public override async Task ChatStream(
-        IAsyncStreamReader<ChatMessage> requestStream,
-        IServerStreamWriter<ChatMessage> responseStream,
+        IAsyncStreamReader<ChatMessage> requestStream, 
+        IServerStreamWriter<ChatMessage> responseStream, 
         ServerCallContext context)
     {
         _logger.LogInformation("Client connected to ChatStream.");
 
-        // We use an async foreach to continuously listen for incoming messages
         await foreach (var message in requestStream.ReadAllAsync())
         {
             _logger.LogInformation("Received from {User}: {Text}", message.User, message.Text);
 
-            // Immediately fire a message back down the response stream
-            var reply = new ChatMessage
-            {
-                User = "Server",
-                Text = $"Echo: {message.Text}"
+            // 3. Map the gRPC message to your EF Core Entity and save it!
+            var record = new ChatMessageRecord 
+            { 
+                User = message.User, 
+                Text = message.Text 
             };
+            
+            _db.ChatMessages.Add(record);
+            await _db.SaveChangesAsync(); // This translates to a SQL INSERT command
 
+            var reply = new ChatMessage 
+            { 
+                User = "Server", 
+                Text = $"Echo: {message.Text} (Saved to SQL!)" 
+            };
+            
             await responseStream.WriteAsync(reply);
         }
-
-        _logger.LogInformation("Client disconnected from ChatStream.");
     }
 }
