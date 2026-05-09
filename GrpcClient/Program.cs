@@ -6,7 +6,7 @@ using GrpcServer.Services;
 Console.WriteLine("Starting gRPC Bidirectional Chat Client...");
 
 // 1. Establish channel and client
-using var channel = GrpcChannel.ForAddress("http://localhost:5135");
+using var channel = GrpcChannel.ForAddress("http://localhost:5288");
 var client = new Greeter.GreeterClient(channel);
 
 // 2. Open the bidirectional stream

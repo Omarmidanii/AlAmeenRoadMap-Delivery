@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # 1. The Database Service
+  sql-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
+    ports:
+      - "1433:1433"
+    
+  # 2. The gRPC Server Service
+  grpc-server:
+    build: 
+      context: .
+      dockerfile: GrpcServer/Dockerfile
+    ports:
+      - "5288:8080" # Maps local port 5288 to container port 8080 (the .NET 8 default)
+    environment:
+      # Notice how Server=sql-db! Docker automatically resolves this to the DB container.
+      - ConnectionStrings__DefaultConnection=Server=sql-db,1433;Database=DistributedLabDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;
+    depends_on:
+      - sql-db # Tells Docker to start the DB before starting the server
