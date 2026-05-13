@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "TOatHYqVZAM=",
+  "dgSpecHash": "59rN9h8aRz8=",
   "success": true,
-  "projectFilePath": "O:\\Projects\\Alameen\\MiniOrderSystem\\MiniOrderSystem.Client\\MiniOrderSystem.Client.csproj",
+  "projectFilePath": "D:\\Roadmap\\AlAmeenRoadMap-Delivery\\MiniOrderSystem\\MiniOrderSystem.Client\\MiniOrderSystem.Client.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DELL\\.nuget\\packages\\google.protobuf\\3.34.1\\google.protobuf.3.34.1.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\grpc.core.api\\2.80.0\\grpc.core.api.2.80.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\grpc.net.client\\2.80.0\\grpc.net.client.2.80.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\grpc.net.common\\2.80.0\\grpc.net.common.2.80.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\grpc.tools\\2.80.0\\grpc.tools.2.80.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\omarmi\\.nuget\\packages\\google.protobuf\\3.34.1\\google.protobuf.3.34.1.nupkg.sha512",
+    "C:\\Users\\omarmi\\.nuget\\packages\\grpc.core.api\\2.80.0\\grpc.core.api.2.80.0.nupkg.sha512",
+    "C:\\Users\\omarmi\\.nuget\\packages\\grpc.net.client\\2.80.0\\grpc.net.client.2.80.0.nupkg.sha512",
+    "C:\\Users\\omarmi\\.nuget\\packages\\grpc.net.common\\2.80.0\\grpc.net.common.2.80.0.nupkg.sha512",
+    "C:\\Users\\omarmi\\.nuget\\packages\\grpc.tools\\2.80.0\\grpc.tools.2.80.0.nupkg.sha512",
+    "C:\\Users\\omarmi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\omarmi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
