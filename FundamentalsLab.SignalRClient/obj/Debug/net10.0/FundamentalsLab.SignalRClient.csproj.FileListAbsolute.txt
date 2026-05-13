@@ -32,3 +32,4 @@ O:\Projects\Alameen\FundamentalsLab.SignalRClient\obj\Debug\net10.0\refint\Funda
 O:\Projects\Alameen\FundamentalsLab.SignalRClient\obj\Debug\net10.0\FundamentalsLab.SignalRClient.pdb
 O:\Projects\Alameen\FundamentalsLab.SignalRClient\obj\Debug\net10.0\FundamentalsLab.SignalRClient.genruntimeconfig.cache
 O:\Projects\Alameen\FundamentalsLab.SignalRClient\obj\Debug\net10.0\ref\FundamentalsLab.SignalRClient.dll
+O:\Projects\Alameen\FundamentalsLab.SignalRClient\obj\Debug\net10.0\FundamentalsLab.SignalRClient.sourcelink.json

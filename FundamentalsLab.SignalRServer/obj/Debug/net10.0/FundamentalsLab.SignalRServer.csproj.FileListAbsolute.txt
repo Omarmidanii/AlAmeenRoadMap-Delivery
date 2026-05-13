@@ -34,3 +34,4 @@ O:\Projects\Alameen\FundamentalsLab.SignalRServer\obj\Debug\net10.0\refint\Funda
 O:\Projects\Alameen\FundamentalsLab.SignalRServer\obj\Debug\net10.0\FundamentalsLab.SignalRServer.pdb
 O:\Projects\Alameen\FundamentalsLab.SignalRServer\obj\Debug\net10.0\FundamentalsLab.SignalRServer.genruntimeconfig.cache
 O:\Projects\Alameen\FundamentalsLab.SignalRServer\obj\Debug\net10.0\ref\FundamentalsLab.SignalRServer.dll
+O:\Projects\Alameen\FundamentalsLab.SignalRServer\obj\Debug\net10.0\FundamentalsLab.SignalRServer.sourcelink.json

@@ -1,0 +1,13 @@
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\bin\Debug\net10.0\MiniOrderSystem.Data.deps.json
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\bin\Debug\net10.0\MiniOrderSystem.Data.dll
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\bin\Debug\net10.0\MiniOrderSystem.Data.pdb
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\MiniOrderSystem.Data.csproj.AssemblyReference.cache
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\MiniOrderSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\MiniOrderSystem.Data.AssemblyInfoInputs.cache
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\MiniOrderSystem.Data.AssemblyInfo.cs
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\MiniOrderSystem.Data.csproj.CoreCompileInputs.cache
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\MiniOrderSystem.Data.sourcelink.json
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\MiniOrderSystem.Data.dll
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\refint\MiniOrderSystem.Data.dll
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\MiniOrderSystem.Data.pdb
+O:\Projects\Alameen\MiniOrderSystem\MiniOrderSystem.Data\obj\Debug\net10.0\ref\MiniOrderSystem.Data.dll

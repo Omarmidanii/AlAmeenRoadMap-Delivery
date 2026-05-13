@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MiniOrderSystem.Client/MiniOrderSystem.Client.csproj" />
+  <Project Path="MiniOrderSystem.Data/MiniOrderSystem.Data.csproj" />
+  <Project Path="MiniOrderSystem.GrpcService/MiniOrderSystem.GrpcService.csproj" />
+</Solution>

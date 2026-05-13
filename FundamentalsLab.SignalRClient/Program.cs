@@ -12,7 +12,10 @@ var hubConnection = new HubConnectionBuilder()
 hubConnection.Reconnecting += error => { Console.WriteLine("Reconnecting..."); return Task.CompletedTask; };
 hubConnection.Reconnected += id => { Console.WriteLine("Reconnected!"); return Task.CompletedTask; };
 
-hubConnection.On<string, DateTime>("ReceiveHeartbeat", (clientName, time) => { /* Silent heartbeat */ });
+hubConnection.On<string, DateTime>("ReceiveHeartbeat", (clientName, time) =>
+{
+    Console.WriteLine($"[Heartbeat] Received from {clientName} at {time:HH:mm:ss}");
+});
 hubConnection.On<string>("JobUpdate", message => Console.WriteLine($"[Live Status] {message}"));
 
 try
@@ -22,6 +25,7 @@ try
     string ClientName = $"ConsoleClient-{hubConnection.ConnectionId}";
     while (true)
     {
+
         if (hubConnection.State == HubConnectionState.Connected)
         {
             await hubConnection.InvokeAsync("SendHeartbeat", ClientName);
